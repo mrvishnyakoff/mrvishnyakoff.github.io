@@ -1,0 +1,82 @@
+body{
+  background: #c5d0d9;
+
+}
+.container{
+text-align: left;
+width:750px;
+max-width:100%;
+margin:70px auto;
+padding: 20px 15px 20px 15px;
+border-radius: 7px;
+background-color: #f2f0f0;
+font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.required{
+    color:red;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=tel],
+ select{
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    vertical-align: middle
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+ select:focus,
+ textarea:focus {
+    box-shadow: 0 0 5px #88D5E9;
+    border: 1px solid #88D5E9;
+
+ }
+#description{
+  color: #A64604;
+  font-weight: normal;
+}
+textarea{
+  width: 250px;
+  height: 100px;
+}
+
+#submit {
+background: #ff9500;
+color: white;
+width: 100px;
+height: 30px;
+cursor: pointer;
+border: none;
+font-size: 16px;
+border-radius: 5px;
+margin: 20px;
+padding-botton: 10px;
+}
+
+#submit:hover {
+  background:#f13b3e; 
+  text-decoration:underline;
+}
+p, #email-label, #name-label, #lastname-label, #number-label, #phone-label, #add-comm{
+  font-weight: bold;
+}
+
+label{
+  font-weight: normal;
+}

@@ -1,0 +1,94 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE HTML>
+<html>
+  <head>
+        <link rel="stylesheet" href="SurveyForm.css">
+<body>
+<div class='container'>
+<header class="header">
+<h1 id="title"> Customer Response Form</h1>
+  <p id="description">---Please fill in information below---</p>
+  <h4><span class='required'>*</span>Mandatory</h4>
+  </header>
+<form id="survey-form">
+<div class="form-group">
+  <label id="name-label" for="name">First Name:<span class="required">*</span></label>
+  <input type="text" name="name" id="name" placeholder="First Name" required>
+  </div>
+<div class="from-group">
+  <label id="lastname-label" for="lastname">Last Name:<span class="required">*</span></label>
+  <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+  </div>
+<div class="from-group">
+  <label id="email-label" for="email">Email:<span class="required">*</span></label>
+  <input type="email" name="email" id="email" placeholder="Email" required>
+  <span class="validity"</span>
+  </div>
+<div class="from-group">
+  <label id="phone-label" for="phone">Phone#:<span class="validity"</span></label>
+  <input type="tel" name="phone" id="phone" placeholder="Phone#" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <small>Format: 123-456-7890</small>
+  </div>
+<div class="from-group">
+  <label id="number-label" for="age">Age:<span class="required">*</span><span class="clue"></span></label>
+  <input type="number" name="age" id="number" min="0" max="99" placeholder="Age" required>
+  </div>
+<div class="from-group">
+  <p>What is your current occupation?</p>
+  <select id="dropdown" name="role" class="form-control" required>
+    <option value="none" selected disabled value>
+          Select an Option
+      </option>
+    <option value="studentFT">Full-Time Student</option>
+    <option value="studentPT">Part-Time Student</option>
+    <option value="job">Full-Time Employment</option>
+    <option value="jobPT">Part-Time Employment</option>
+    <option value="jobNO">Unemployed</option>
+    <option value="other">Other</option>
+  </select>
+  </div>
+<div class="from-group">
+  <p>Would you like to receive our promotional emails?</p>
+  <label>
+    <input type="radio" name="user-answer" value="yes" class="input-radio">Yes</label><br>
+  <label>
+    <input type="radio" name="user-answer" value="not-sure" class="input-radio">Not sure</label><br>
+  <label>
+    <input type="radio" name="user-answer" value="no" class="input-radio">No</label>
+  </div>
+<div class="from-group">
+  <p>What is your favorite part about our service?</p>
+  <select id="like" name="like" class="form-control" required>
+    <option value="none" selected disabled value>
+          Select an Option
+      </option>
+    <option value="service">Reliable Service</option>
+    <option value="delivery">Delivery</option>
+    <option value="csr">Customer Service</option>
+    <option value="pricing">Competative Pricing</option>
+    <option value="callback">Timely Callback</option>
+  </select>
+  </div>
+<div class="from-group">
+  <p>How could we improve our service?<span class="clue">(Check all that apply)</span></p>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-improvements" class='input-checkbox'>Application Improvements(UI/UX)</label><br>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-features" class="imput-checkbox">Application Features</label><br>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-security" class="input-checkbox">Application Security</label><br>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-statistics" class="imput-checkbox">Application Statistics</label><br>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-help" class="imput-checkbox">Application FAQ/Help Section</label><br>
+  <label>
+    <input type="checkbox" id="app" name="app" value="app-login" class="imput-checkbox">Application Login Remembrance</label><br>
+  </div>
+<div class="from-group">
+  <p>Do you have any commetns or suggestions for us? Please leave us a comment.</p>
+  <textarea id="feedback" name="feedback" class="input-textarea" placeholder="Enter your suggestions here..."></textarea>
+  </div>
+<div class="from-group">
+  <button type="submit" id="submit" class="button-submit">Submit</button>
+  </body>
+  </html>
